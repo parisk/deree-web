@@ -7,3 +7,9 @@ Before getting started you have to bootstrap your database. To do this run the f
 ```shell
 ./scripts/bootstrapdb
 ```
+
+## Lecture instructions
+
+### Lecture 2
+
+Instructions on lecture 2...
