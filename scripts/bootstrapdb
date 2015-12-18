@@ -1,0 +1,14 @@
+#! /bin/sh
+
+echo "Creating database..."
+mysql -h mysql -u root -pmysecretpassword < database/_create.sql
+
+echo "Creating schema..."
+./scripts/db < database/databaseScript.sql
+
+echo "Inserting categories fixtures..."
+./scripts/db < database/categories.sql
+echo "Inserting products fixtures..."
+./scripts/db < database/products.sql
+echo "Inserting users fixtures..."
+./scripts/db < database/users.sql

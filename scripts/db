@@ -1,0 +1,3 @@
+#! /bin/sh
+
+mysql -h mysql -u root -pmysecretpassword fall2015_demo
